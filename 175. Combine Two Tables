@@ -1,0 +1,6 @@
+SELECT firstName,
+       lastName,
+       city,
+       state
+FROM person AS p
+LEFT OUTER JOIN address AS a ON p.personId=a.personId;
