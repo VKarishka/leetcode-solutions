@@ -1,0 +1,4 @@
+SELECT c.name AS Customers
+FROM customers AS c
+LEFT OUTER JOIN orders AS o ON c.id = o.customerId
+WHERE o.customerId IS NULL;
